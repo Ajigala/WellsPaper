@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellsPaper</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="#nav">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="navlinks">
+        <i class="fas fa-xmark" onclick="SideBarHide()"></i>
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#new" id="scroll">New</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Catergories</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="SideBarShow()"></i>
+    </nav>
+    <section class="section1" id="section1">
+      <div class="section1container">
+        <div class="section1card1">
+          <div class="card1-image">
+            <div class="destop-image">
+              <img src="./images/image-web-3-desktop.jpg" alt="" />
+            </div>
+            <div class="mobile-image">
+              <img src="./images/image-web-3-mobile.jpg" alt="" />
+            </div>
+          </div>
+          <div class="context">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="section1card1-II">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button id="btn">Read More</button>
+          </div>
+        </div>
+        <div class="section1card2" id="new">
+          <div>
+            <h1>New</h1>
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr />
+            <a href="">The Downsides of AI Artistry</a>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <hr />
+            <a href="">Is VC Funding Drying Up?</a>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2container">
+        <div class="card1">
+          <div class="box1">
+            <img src="./images/image-retro-pcs.jpg" alt="" />
+          </div>
+          <div class="box2">
+            <span>01</span>
+          </div>
+          <div class="box3">
+            <a href="">Reviving Retro PCs</a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="box1">
+            <img src="./images/image-top-laptops.jpg" alt="" />
+          </div>
+          <div class="box2">
+            <span>02</span>
+          </div>
+          <div class="box3">
+            <a href="">Top 10 Laptops of 2022</a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="box1">
+            <img src="./images/image-gaming-growth.jpg" alt="" />
+          </div>
+          <div class="box2">
+            <span>03</span>
+          </div>
+          <div class="box3">
+            <a href="">The Growth of Gaming</a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

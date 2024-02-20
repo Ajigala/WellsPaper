@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "inter";
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: hsl(240, 100%, 5%);
+}
+a:hover {
+  color: hsl(5, 85%, 63%);
+}
+nav {
+  display: flex;
+  margin: auto;
+  padding: 20px 5% 0;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+.navlinks {
+  display: block;
+}
+.logo {
+  width: 50%;
+}
+.navlinks ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+nav .fas {
+  font-size: 2rem;
+  display: none;
+}
+.fa-bars {
+  margin-left: auto;
+}
+.section1 {
+  margin: auto;
+  padding: 8% 5% 0;
+}
+.section1container {
+  display: flex;
+  gap: 20px;
+}
+.section1container img {
+  width: 97%;
+}
+.mobile-image {
+  display: none;
+}
+.section1card1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 10px;
+  row-gap: 10px;
+}
+.card1-image {
+  grid-column: 1 /-1;
+}
+.context h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.section1card1-II {
+  grid-column: -1/2;
+  /* margin-left: 70px; */
+  margin-right: 40px;
+}
+.section1card1-II p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0px;
+  width: 100%;
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+}
+.section1card1-II button {
+  padding: 15px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+.section1card1-II button:hover {
+  background: black;
+}
+.section1card2 {
+  background: black;
+  color: white;
+  padding: 20px 30px;
+}
+.section1card2 h1 {
+  font-size: 2rem;
+  color: hsl(35, 77%, 62%);
+}
+.section1card2 a {
+  color: white;
+  font-size: 1.3rem;
+}
+hr {
+  margin-bottom: 20px;
+}
+.section1card2 a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.section1card2 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: hsl(236, 13%, 42%);
+}
+.section2 {
+  margin: auto;
+  padding: 45px 5%;
+}
+.section2container {
+  display: flex;
+  gap: 30px;
+}
+.section2container .card1 {
+  display: grid;
+  column-gap: 90px;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(1, 70px);
+}
+.section2container img {
+  width: 130px;
+  height: 180px;
+}
+.section2container span {
+  font-size: 3rem;
+  color: hsl(236, 13%, 42%);
+}
+.section2container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: hsl(236, 13%, 42%);
+}
+.section2container a {
+  font-size: 1.3rem;
+}
+.section2container .box3 {
+  grid-column: 2 / span 2;
+  /* grid-row: -1 / span 2; */
+}
+.box1 {
+  grid-row: 3/1;
+}
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+  .section1container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .logo {
+    width: 15%;
+    margin-right: 0;
+  }
+  .navlinks ul li {
+    margin-left: 5px;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .navlinks a {
+    font-size: 1rem;
+  }
+  .destop-image {
+    display: block;
+  }
+  .mobile-image {
+    display: none;
+  }
+  .section1card1 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .context h1 {
+    font-size: 2rem;
+  }
+  .section1card1-II p {
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  .section1card1-II {
+    margin: 0;
+  }
+  .section1card1-II button {
+    width: 200px;
+  }
+  .section2container .card1 p {
+    width: 200px;
+  }
+  .section2container {
+    flex-wrap: wrap;
+  }
+  .section2container .card1 {
+    column-gap: 80px;
+    grid-template-columns: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo img {
+    width: 50%;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .destop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    width: 90%;
+    padding-top: 20px;
+    background: white;
+  }
+  .navlinks {
+    position: fixed;
+    display: block;
+    top: 0;
+    background: hsl(240, 100%, 5%);
+    width: 50%;
+    right: -100%;
+    height: 100%;
+    padding-top: 20%;
+    z-index: 999;
+    transition: right 0.5s ease;
+  }
+  .navlinks ul li {
+    margin-left: 45px;
+  }
+  .navlinkshow {
+    right: 0;
+  }
+  .navlinks ul,
+  li {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .navlinks ul li a {
+    color: hsl(35, 77%, 62%);
+  }
+  .fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: hsl(35, 77%, 62%);
+  }
+  nav .fas {
+    display: block;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  nav .fas:hover {
+    background: hsl(236, 13%, 42%);
+  }
+  .navlinks ul li {
+    display: block;
+  }
+  .section1container {
+    flex-direction: column;
+  }
+  .context h1 {
+    font-size: 1.4rem;
+  }
+  .section1card1-II p {
+    font-size: 1rem;
+  }
+  .section1card1-II #btn {
+    font-size: 13px;
+    padding: 10px;
+    width: 100px;
+  }
+  .section1card2 a {
+    font-size: 1rem;
+  }
+  .section1card2 p {
+    font-size: 1rem;
+  }
+  .section2container .card1 {
+    column-gap: 50px;
+    grid-template-columns: 50px 50px;
+  }
+  .section2container .card1 p {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: bold;
+    width: 220px;
+    margin-top: 2px;
+  }
+  .section2container .card1 span {
+    font-size: 2.5rem;
+  }
+  .section2container {
+    flex-wrap: wrap;
+  }
+  .section2container img {
+    width: 100px;
+    height: 150px;
+  }
+  .section2container a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    width: 40%;
+  }
+  .section1card1 {
+    width: 100%;
+  }
+  .section1card1 .context h1 {
+    font-size: 2rem;
+  }
+  .section2container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .section2container .card1 {
+    row-gap: 5px;
+    grid-template-columns: 60px;
+  }
+  .box3 p {
+    width: 400px;
+    line-height: 1.3;
+  }
+}
